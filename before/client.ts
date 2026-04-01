@@ -1,3 +1,8 @@
+import { SecuritySystem, SecuritySystemState } from "../SecuritySystem";
+import { ClimateControl } from "../ClimateControl";
+import { LightingSystem } from "../LightingSystem";
+import { TV } from "../HomeTheater";
+
 function clientBefore() {
   // ... let's say we want to watch our favorite movie ...
   const securitySystem = new SecuritySystem();

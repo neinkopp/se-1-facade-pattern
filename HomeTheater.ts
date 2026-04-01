@@ -1,4 +1,4 @@
-class HomeTheater {
+export class HomeTheater {
   private _audioPlayer: AudioPlayer;
   private _tv: TV;
 
@@ -17,7 +17,7 @@ class HomeTheater {
   }
 }
 
-class AudioPlayer {
+export class AudioPlayer {
   playTitle(name: string) {
     console.debug(`Play audio with title ${name}`);
   }
@@ -31,11 +31,12 @@ class AudioPlayer {
   }
 }
 
-enum HDRMode {
+export enum HDRMode {
   ENABLED = "on",
   DISABLED = "off",
 }
-class TV {
+
+export class TV {
   turnOff() {
     console.debug(`Turned off tv`);
   }

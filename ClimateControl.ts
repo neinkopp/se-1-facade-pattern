@@ -1,4 +1,4 @@
-class ClimateControl {
+export class ClimateControl {
   setTemperature(degreesCelsius: number) {
     console.debug(`Set temperature to ${degreesCelsius.toString()} °C`);
   }

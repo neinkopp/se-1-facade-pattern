@@ -1,4 +1,8 @@
-class SmartHomeFacade {
+import { ClimateControl } from "../ClimateControl";
+import { AudioPlayer, TV, HDRMode } from "../HomeTheater";
+import { LightingSystem } from "../LightingSystem";
+
+export class SmartHomeFacade {
   private _climateControl: ClimateControl;
   private _audioPlayer: AudioPlayer;
   private _tv: TV;

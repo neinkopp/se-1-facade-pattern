@@ -1,9 +1,9 @@
-enum SecuritySystemState {
+export enum SecuritySystemState {
   ARMED = "armed",
   DISARMED = "disarmed",
 }
 
-class SecuritySystem {
+export class SecuritySystem {
   arm() {
     // .. actual arming of the security system
     console.debug(`Armed security system`);

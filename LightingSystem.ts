@@ -1,4 +1,4 @@
-class LightingSystem {
+export class LightingSystem {
   dim(level: number) {
     // .. the actual dimming (Hardware Interface)
     console.debug(`Dimmed lights to ${level}`);
