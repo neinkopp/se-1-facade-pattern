@@ -9,10 +9,12 @@ function clientBefore() {
   if (securitySystem.state === SecuritySystemState.ARMED) {
     throw new Error("Cannot watch movie when security system is armed");
   }
+
   const climate = new ClimateControl();
-  climate.setTemperature(23);
   const lightingSystem = new LightingSystem();
-  lightingSystem.dim(0.1);
   const tv = new TV();
+
+  climate.setTemperature(23);
+  lightingSystem.dim(0.1);
   tv.watch("Barbie");
 }

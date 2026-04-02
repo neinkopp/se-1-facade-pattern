@@ -1,4 +1,4 @@
-export class HomeTheater {
+export class HomeTheaterFacade {
   private _audioPlayer: AudioPlayer;
   private _tv: TV;
 
@@ -32,8 +32,11 @@ export class AudioPlayer {
 }
 
 export enum HDRMode {
-  ENABLED = "on",
   DISABLED = "off",
+  AUTO = "auto",
+  HDR10 = "HDR10",
+  HDR10_PLUS = "HDR10+",
+  DOLBY_VISION = "Dolby Vision",
 }
 
 export class TV {
@@ -44,6 +47,6 @@ export class TV {
     console.debug(`Play movie with title ${name}`);
   }
   setHDRMode(mode: HDRMode) {
-    console.debug(`Turned ${mode} HDR mode`);
+    console.debug(`Set HDR mode to: ${mode}`);
   }
 }
